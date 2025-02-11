@@ -13,22 +13,22 @@ public class programDeretBilangan {
         char digit1 = nim.charAt(nim.length() - 2);
         char digit2 = nim.charAt(nim.length() - 1);
 
-        // untuk menghitung nilai n secara manual
+        // untuk menghitung nilai n secara manual bertahap
         int n = (digit1 - '0') * 10 + (digit2 - '0');
 
-        // Jika n < 10, tambahkan 10
+        // Jika n lebih besar dari 10,maka akan menambahkan 10
         if (n < 10) {
             n += 10;
         }
 
         System.out.println("--------------------------------");
         System.out.println("n : " + n);
-        System.out.print("Output: ");
+        System.out.print("Output : ");
 
         // Menampilkan deretan bilangan sesuai ketentuan
         for (int i = 1; i <= n; i++) {
             if (i == 6 || i == 10) {
-                continue; // Lewati angka 6 dan 10
+                continue; // untuk melewati angka 6 dan angka 10
             }
             if (i % 2 == 1) {
                 System.out.print("* "); // Jika Angka Mahasiswa bernilai ganjil diubah jadi asteriks/bintang

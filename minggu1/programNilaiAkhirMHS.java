@@ -9,13 +9,13 @@ public class programNilaiAkhirMHS {
        
         System.out.println("Program Menghitung Nilai Akhir");
         System.out.println(" ---------------------------");
-        System.out.print(" Nilai tugas Mahasiswa : ");
+        System.out.print(" Nilai TUGAS Mahasiswa : ");
         int tugasMHS = insertSC.nextInt();
-        System.out.print(" Nilai kuis Mahasiswa : ");
+        System.out.print(" Nilai KUIS Mahasiswa : ");
         int kuisMHS = insertSC.nextInt();
         System.out.print(" Nilai UTS Mahasiswa : ");
         int utsMHS = insertSC.nextInt();
-        System.out.print(" Nilai uas Mahasiswa : ");
+        System.out.print(" Nilai UAS Mahasiswa : ");
         int uasMHS = insertSC.nextInt();
         System.out.println(" ---------------------------");
 
@@ -44,7 +44,7 @@ public class programNilaiAkhirMHS {
                 nilaiPeringkatMHS = "E";
             }
 
-            // Seleksi Kelulusan
+            // Seleksi Kelulusan untuk menyatakan lulus dan tidak lulusnya mahasiswa dalam studi
             String MHSlulus = (nilaiPeringkatMHS.equals("A") || nilaiPeringkatMHS.equals("B+") || nilaiPeringkatMHS.equals("B") || 
                                 nilaiPeringkatMHS.equals("C+") || nilaiPeringkatMHS.equals("C")) ? "LULUS" : "TIDAK LULUS";
 
@@ -52,7 +52,7 @@ public class programNilaiAkhirMHS {
             System.out.printf("Nilai Akhir Mahasiswa : %.2f\n", nilaiAkhirMHS);
             System.out.println("Nilai Huruf : " + nilaiPeringkatMHS);
             System.out.println(" ---------------------------");
-            System.out.println("SELAMAT ANDA DINYATAKAN" + MHSlulus);
+            System.out.println("MAHASISWA DINYATAKAN " + MHSlulus);
         }
         
         insertSC.close();

@@ -28,20 +28,20 @@ public static void main(String[] args) {
 
 public static void tampilkanMenu() {
         System.out.println("Pilih perhitungan yang ingin dilakukan:");
-        System.out.println("1. Volume Kubus");
-        System.out.println("2. Luas Permukaan Kubus");
-        System.out.println("3. Keliling Kubus");
+        System.out.println("1. Menentukan Volume Kubus");
+        System.out.println("2. Menentukan Luas Permukaan Kubus");
+        System.out.println("3. Menentukan Keliling Kubus");
         System.out.print("Masukkan Aksi User dari opsi di atas : ");
 }
-    // Fungsi untuk menghitung volume kubus
+    // Fungsi ini menghitung volume kubus
 public static int mesinVolKubus(int s) {
         return s * s * s;
     }
-    // Fungsi untuk menghitung luas permukaan kubus
+    // Fungsi ini menghitung luas permukaan kubus
     public static int mesinLuasPermukaanKubus(int s) {
         return 6 * (s * s);
     }
-    // Fungsi untuk menghitung keliling kubus
+    // Fungsi ini menghitung keliling kubus
     public static int mesinKelilingKubus(int s) {
         return 12 * s;
     }

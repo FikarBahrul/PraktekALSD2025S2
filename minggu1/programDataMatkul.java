@@ -34,7 +34,7 @@ public class programDataMatkul {
             System.out.println("2. Menampilkan jadwal kuliah berdasarkan hari tertentu");
             System.out.println("3. Menampilkan jadwal kuliah berdasarkan semester tertentu");
             System.out.println("4. Mencari mata kuliah berdasarkan nama");
-            System.out.println("5. Keluar Program");
+            System.out.println("5. Keluar dari Program");
             System.out.print("Silahkan untuk memilih opsi di atas : ");
             int choice = insertSC.nextInt();
             insertSC.nextLine();
