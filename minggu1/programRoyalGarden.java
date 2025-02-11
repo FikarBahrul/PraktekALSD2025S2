@@ -1,6 +1,6 @@
 package minggu1;
 
-class programRoyalGarden {
+public class programRoyalGarden {
     public static void main(String[] args) {
         int[][] stokBunga = {
             {10, 5, 15, 7},  // RoyalGarden 1
