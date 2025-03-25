@@ -28,7 +28,8 @@ class dosenDemo13 {
             System.out.println("3. Pengurutan Secara Ascending (Bubble Sort)");
             System.out.println("4. Pengurutan Secara Descending (Selection Sort)");
             System.out.println("5. Pengurutan Secara Descending (Insertion Sort)");
-            System.out.println("6. Keluar dari Menu");
+            System.out.println("6. Pencarian Dosen");
+            System.out.println("7. Keluar");
             System.out.print("Pilih menu : ");
             int opsi = sc13.nextInt();
             sc13.nextLine();
@@ -55,8 +56,31 @@ class dosenDemo13 {
             } else if (opsi == 5) {
                 data.insertionsortDSC();
                 System.out.println("Data berhasil diurutkan secara Descending (Insertion Sort).");
-            } else if (opsi == 6) {
-                break;
+            } else if (opsi == 6) { 
+                System.out.println("\nPilih metode pencarian:");
+                System.out.println("1. Pencarian berdasarkan Nama (Sequential Search)");
+                System.out.println("2. Pencarian berdasarkan Usia (Binary Search)");
+                System.out.print("Pilihan: ");
+                int opsi2 = sc13.nextInt();
+    
+            if (opsi2 == 1) {
+                    System.out.print("Masukkan nama dosen yang ingin dicari : ");
+                    sc13.nextLine();
+                    String cariNamaDosen = sc13.nextLine();
+                    data.PencarianDataSequential13(cariNamaDosen);
+    
+            } else if (opsi2 == 2) {
+                    System.out.print("Masukkan usia dosen yang ingin dicari : ");
+                    int cariUsiaDosen = sc13.nextInt();
+                    data.PencarianDataBinary13(cariUsiaDosen);
+    
+            } else {
+                    System.out.println("Pilihan tidak valid.");
+                }
+            } else if (opsi == 7) {
+                System.out.println("Keluar dari program...");
+                sc13.close();
+                return;
             } else {
                 System.out.println("Opsi yang anda berikan tidak valid");
             }
