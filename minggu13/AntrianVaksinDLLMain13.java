@@ -26,7 +26,7 @@ public class AntrianVaksinDLLMain13 {
                     System.out.println("Masukkan Data Penerima Vaksin");
                     System.out.println("---------------------------");
                     System.out.println("Nomor Antrian: ");
-                    int noAntrian = sc.nextInt();1
+                    int noAntrian = sc.nextInt();
                     sc.nextLine();
                     System.out.println("Nama Penerima: ");
                     String nama = sc.nextLine();
